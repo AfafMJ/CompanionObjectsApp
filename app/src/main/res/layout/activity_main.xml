@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        
+
         android:layout_marginEnd="32dp"
 
 
@@ -22,17 +22,16 @@
         android:hint="Enter day or night"
         android:inputType="textPersonName"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/btChange"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btChange"
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_rawRes="@raw/switch_button"
+        android:id="@+id/switchDay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="change background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
